@@ -1,0 +1,133 @@
+[
+  {
+    "title": "Login",
+    "fields": [
+      {
+        "type": "email",
+        "label": "Username",
+        "required": true,
+        "validate": "email",
+        "toShow": true
+      },
+      {
+        "type": "password",
+        "label": "Password",
+        "required": true,
+        "validate": "password",
+        "toShow": true
+      }
+    ],
+    "next": true,
+    "skip": false,
+    "toShow": true
+  },
+  {
+    "title": "Personal Information",
+    "next": true,
+    "skip": true,
+    "toShow": true,
+    "fields": [
+      {
+        "type": "text",
+        "label": "Full Name",
+        "required": true,
+        "validate": "text",
+        "toShow": true
+      },
+      {
+        "type": "number",
+        "label": "Mobile Number",
+        "required": true,
+        "validate": "number",
+        "toShow": true
+      },
+      {
+        "type": "radio",
+        "label": "Gender",
+        "required": true,
+        "validate": "radio",
+        "toShow": false
+      }
+    ]
+  },
+  {
+    "title": "Address",
+    "next": true,
+    "skip": false,
+    "toShow": true,
+    "fields": [
+      {
+        "type": "text",
+        "label": "Address",
+        "required": true,
+        "validate": "text",
+        "toShow": true
+      },
+      {
+        "type": "text",
+        "label": "Landmark",
+        "required": false,
+        "validate": "text",
+        "toShow": true
+      },
+      {
+        "type": "number",
+        "label": "Pincode",
+        "required": true,
+        "validate": "number",
+        "toShow": true
+      }
+    ]
+  },
+  {
+    "title": "Payment Information",
+    "next": true,
+    "skip": false,
+    "toShow": true,
+    "fields": [
+      {
+        "type": "number",
+        "label": "Card number",
+        "required": true,
+        "validate": "number",
+        "toShow": true
+      },
+      {
+        "type": "date",
+        "label": "Expiry",
+        "required": true,
+        "validate": "date",
+        "toShow": true
+      },
+      {
+        "type": "number",
+        "label": "CVV",
+        "required": true,
+        "validate": "number",
+        "toShow": true
+      },
+      {
+        "type": "button",
+        "label": "Pay now",
+        "required": true,
+        "validate": "onSubmit",
+        "toShow": true
+      }
+    ]
+  },
+  {
+    "title": "Feedback",
+    "next": false,
+    "skip": true,
+    "toShow": true,
+    "fields": [
+      {
+        "type": "number",
+        "label": "Rating",
+        "required": false,
+        "validate": "number",
+        "toShow": true
+      }
+    ]
+  }
+]
